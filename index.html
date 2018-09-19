@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Backbone</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+		<div class="container">
+				<h1>Backbone Cars</h1>
+		
+				<table class="table">
+					<thead>
+						<tr>
+							<th>CarName</th>
+							<th>CarYear</th>
+							<th>EnginePower</th>
+							<th>Action</th>
+						</tr>
+						<tr>
+							<td><input class="form-control name-input"></td>
+							<td><input class="form-control year-input"></td>
+							<td><input class="form-control engine-input"></td>
+							<td><button class="btn btn-primary add-blog">Add</button></td>
+						</tr>
+					</thead>
+					<tbody class="blogs-list"></tbody>
+				</table>
+			</div>
+		
+			<script type="text/template" class="blogs-list-template">
+			<td><span class="name"><%= name %></span></td>
+			<td><span class="year"><%= year %></span></td>
+			<td><span class="engine"><%= engine %></span></td>
+			<td>
+				<button class="btn btn-warning edit-blog">Edit</button>
+				<button class="btn btn-danger delete-blog">Delete</button>
+				<button class="btn btn-success update-blog" style="display:none">Update</button>
+				<button class="btn btn-danger cancel" style="display:none">Cancel</button>
+			</td>
+		
+			</script>
+			
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>	
+<script src="node_modules/underscore/underscore-min.js"></script>	
+<script src="node_modules/backbone/backbone-min.js"></script>	
+<script src="public/js/scripts.js"></script>		
+</body>
+</html>
